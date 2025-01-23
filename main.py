@@ -2,9 +2,7 @@ def main():
     path = "books/frankenstein.txt"
     with open(path) as f:
         file_contents = f.read()
-
         word_count = count_words(file_contents)
-        
         character_count = count_characters(file_contents)
 
         print(f"Begin report of {path} ")
